@@ -1,0 +1,31 @@
+import android.content.Intent;
+import android.view.View;
+import android.view.Window;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class Main2Activity extends Activity {
+    Button login;
+    Intent a;
+    EditText username, password;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main2);
+    } 
+
+    public void lanjut (View view){
+
+        Intent i = new Intent(Main2Activity.this,MainActivity.class);
+        startActivity(i);
+    }
+
+    public void  lanjuty (View view){
+        Intent i = new Intent(Main2Activity.this,Main3Activity.class);
+        startActivity(i);
+    }
+
+
+}
